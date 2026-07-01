@@ -42,4 +42,5 @@ public class ParcelBox<T extends Parcel> {
     public String getDestinationCity() {
         return destinationCity;
     }
+
 }
