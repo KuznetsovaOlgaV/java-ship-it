@@ -191,6 +191,4 @@ public class DeliveryApp {
             System.out.println("  - " + p.description + " (" + p.weight + " кг)" + status);
         }
     }
-
-
 }
