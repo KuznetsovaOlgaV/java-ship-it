@@ -3,12 +3,13 @@ package ru.yandex.practicum;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import ru.yandex.practicum.delivery.*;
+
 import java.util.List;
 
 class ParcelBoxTest {
 
     @Test
-    void addParcel_fitsWithinMaxWeight() {
+    void addParcelFitsWithinMaxWeight() {
         ParcelBox<StandardParcel> box = new ParcelBox<>("Город", 10);
         StandardParcel p = new StandardParcel("Коробка", 5, "ул. Ленина, 8", 3);
         Assertions.assertTrue(box.addParcel(p));
@@ -18,7 +19,7 @@ class ParcelBoxTest {
     }
 
     @Test
-    void addParcel_exceedsMaxWeight() {
+    void addParcelExceedsMaxWeight() {
         ParcelBox<StandardParcel> box = new ParcelBox<>("Город", 5);
         StandardParcel p1 = new StandardParcel("Лёгкая", 3, "ул. Мира, 5", 8);
         StandardParcel p2 = new StandardParcel("Тяжёлая", 3, "ул. Яровая, 8", 7);
@@ -32,7 +33,7 @@ class ParcelBoxTest {
     }
 
     @Test
-    void addParcel_boundaryWeight() {
+    void addParcelBoundaryWeight() {
         ParcelBox<StandardParcel> box = new ParcelBox<>("Город", 5);
         StandardParcel p = new StandardParcel("Ровно", 5, "ул. Равная, 1", 1);
 
