@@ -35,14 +35,15 @@ class DeliveryCostTest {
     }
 
     @Test
-    void isExpired_notExpired() {
+    void isExpiredNotExpired() {
         PerishableParcel p = new PerishableParcel("Фрукты", 1, "ул. Фруктовая", 10, 5);
         assertFalse(p.isExpired(14)); // срок не вышел
     }
 
     @Test
-    void isExpired_expired() {
+    void isExpiredExpired() {
         PerishableParcel p = new PerishableParcel("Фрукты", 1, "ул. Фруктовая", 10, 5);
         assertTrue(p.isExpired(16)); // срок вышел
     }
+
 }
