@@ -23,7 +23,9 @@ public abstract class Parcel {
         return weight * getBaseCostPerKg();
     }
 
-    public abstract void packageItem();
+    public void packageItem(){
+        printPackaged();
+    }
 
     public abstract void deliver();
 }

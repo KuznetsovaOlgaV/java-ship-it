@@ -8,11 +8,6 @@ public class StandardParcel extends Parcel {
     }
 
     @Override
-    public void packageItem() {
-        printPackaged();
-    }
-
-    @Override
     public void deliver() {
         System.out.println("Посылка " + description + " доставлена по адресу " + deliveryAddress);
     }

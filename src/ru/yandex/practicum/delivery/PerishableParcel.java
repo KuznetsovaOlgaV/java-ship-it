@@ -12,7 +12,7 @@ public class PerishableParcel extends Parcel {
 
     @Override
     public void packageItem() {
-        printPackaged();
+        super.packageItem();
     }
 
     @Override
