@@ -6,3 +6,4 @@ Repository for homework project.
 
 Java 21
 
+Техническое задание ShipIt
