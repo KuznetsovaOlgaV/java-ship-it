@@ -14,7 +14,7 @@ class ParcelBoxTest {
         Assertions.assertTrue(box.addParcel(p));
         List<StandardParcel> contents = box.getAllParcels();
         Assertions.assertEquals(1, contents.size());
-        Assertions.assertSame(p, contents.get(0));
+        Assertions.assertSame(p, contents.getFirst());
     }
 
     @Test
@@ -28,7 +28,7 @@ class ParcelBoxTest {
 
         List<StandardParcel> contents = box.getAllParcels();
         Assertions.assertEquals(1, contents.size());
-        Assertions.assertSame(p1, contents.get(0));
+        Assertions.assertSame(p1, contents.getFirst());
     }
 
     @Test
