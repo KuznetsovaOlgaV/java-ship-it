@@ -21,5 +21,4 @@ public class StandardParcel extends Parcel {
     protected int getBaseCostPerKg() {
         return BASE_COST;
     }
-
 }

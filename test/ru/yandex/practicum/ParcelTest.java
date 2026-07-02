@@ -39,5 +39,4 @@ class ParcelBoxTest {
         Assertions.assertTrue(box.addParcel(p));
         Assertions.assertEquals(5, box.getCurrentWeight());
     }
-
 }

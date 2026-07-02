@@ -45,5 +45,4 @@ class DeliveryCostTest {
         PerishableParcel p = new PerishableParcel("Фрукты", 1, "ул. Фруктовая", 10, 5);
         assertTrue(p.isExpired(16)); // срок вышел
     }
-
 }
